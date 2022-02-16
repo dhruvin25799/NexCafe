@@ -1,0 +1,96 @@
+:root {
+  --COLOR-primary-green: #114639;
+  --COLOR-card-green: #e2ede9;
+  --COLOR-secondary-text: #777777;
+  --COLOR-white: white;
+  --COLOR-main-background: #f3f3f3;
+  --COLOR-footer-text: rgba(255, 255, 255, 0.8);
+  --COLOR-primary-green-hover: #0f4034;
+  --COLOR-dark-gray: #2d2a2a;
+  --COLOR-border-color-quantity: rgba(129, 129, 129, .20);
+}
+
+.login-main{
+    display: flex;
+    flex-flow: row;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.login-main hr{
+    border: none;
+    border-right: 2px solid var(--COLOR-border-color-quantity);
+}
+
+.login-box{
+    padding: 3rem;
+    flex: 1 1 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.login-box .login-header{
+    color: var(--COLOR-primary-green);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.login-box .login-input{
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+}
+
+.login-input .input-control{
+    display: flex;
+    flex-flow: column;
+    gap: 0.3rem;
+}
+
+.login-input .input-control input{
+    padding: 1rem 0.5rem;
+    border: 2px solid var(--COLOR-border-color-quantity);
+    background-color: transparent;
+}
+
+.login-change{
+    padding: 3rem;
+    flex: 1 1 50%;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.login-change .login-change-cta{
+    padding-bottom: 1rem;
+}
+
+.login-change .change-header{
+    color: var(--COLOR-primary-green);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.login-change .login-change-desc{
+    color: var(--COLOR-secondary-text);
+}
+
+@media (max-width: 480px) {
+    .login-main{
+        flex-flow: column;
+    }
+    .login-main hr{
+        border: none;
+        border-top: 2px solid var(--COLOR-border-color-quantity);
+    }
+    .login-box{
+        padding: 1rem;
+        flex: auto;
+    }
+    .login-change{
+        padding: 1rem;
+        flex: auto;
+    }
+}
